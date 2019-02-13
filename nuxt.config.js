@@ -122,6 +122,7 @@ module.exports = {
     //   audio: 'src'
     // },
     extend(config, ctx) {
+      process.noDeprecation = true
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push(
