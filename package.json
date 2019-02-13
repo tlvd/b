@@ -2,7 +2,7 @@
   "name": "BeeBibi",
   "version": "1.0.0",
   "description": "To Bee or not to Bibi?",
-  "author": "Shift Theory",
+  "author": "Tel Aviv Digital",
   "private": true,
   "scripts": {
     "dev": "HOST=0.0.0.0 nuxt",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/google-tag-manager": "^2.1.4",
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/style-resources": "^0.1.1",
     "acorn": "^6.0.5",

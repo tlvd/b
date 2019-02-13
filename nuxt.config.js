@@ -34,10 +34,10 @@ module.exports = {
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5b4cff' },
-      { rel: 'preload', href: '/_nuxt/assets/images/bibi-1.png', as: 'image' },
-      { rel: 'preload', href: '/_nuxt/assets/images/bibi-2.png', as: 'image' },
-      { rel: 'preload', href: '/_nuxt/assets/images/bibi-3.png', as: 'image' },
-      { rel: 'preload', href: '/_nuxt/assets/images/bibi-4.png', as: 'image' },
+      // { rel: 'preload', href: '/_nuxt/assets/images/bibi-1.png', as: 'image' },
+      // { rel: 'preload', href: '/_nuxt/assets/images/bibi-2.png', as: 'image' },
+      // { rel: 'preload', href: '/_nuxt/assets/images/bibi-3.png', as: 'image' },
+      // { rel: 'preload', href: '/_nuxt/assets/images/bibi-4.png', as: 'image' },
       // { rel: 'preload', href: '/audio/fart-1.mp3', as: 'audio' }
       // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400,500,700' }
     ]
@@ -77,21 +77,25 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
-    ['@nuxtjs/pwa', {
-      icon: false
-      // meta: false,
-      // manifest: false,
-      // oneSignal: false
-    }]
+    '@nuxtjs/pwa',
+    '@nuxtjs/google-tag-manager',
   ],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
   styleResources: {
-     // your settings here
     scss: [
       './assets/scss/main.scss'
     ],
+  },
+  pwa: {
+    icon: false
+    // meta: false,
+    // manifest: false,
+    // oneSignal: false
+  },
+  googleTagManager: {
+    id: 'GTM-WXTZ4QB'
   },
 
   /*
